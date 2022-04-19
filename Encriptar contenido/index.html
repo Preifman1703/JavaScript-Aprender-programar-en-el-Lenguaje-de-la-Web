@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptar con BASE64</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen">
+        <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script defer src="base64.js"></script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo left">Uso de Base64</a>
+                </div>
+            </nav>
+        </div>
+        <div class="input-field">
+            <input placeholder="Palabra o frase a encriptar" id="texto" type="text" class="validate">
+        </div>
+        <div>
+            <a class="waves-effect waves-light btn-small red lighten-2 margenes-laterales" id="boton-encriptar">
+                <i class="material-icons right">enhanced_encryption</i>Encripto</a>
+        </div>
+        <div>
+            <p id="texto-resultado" class="label">Texto encriptado:</p>
+        </div>
+        <div>
+            <a class="waves-effect waves-light btn-small red lighten-2 margenes-laterales" id="boton-desencriptar">
+                <i class="material-icons right">no_encryption</i>desencripto</a>
+        </div>
+        <div>
+            <p id="texto-desencriptado" class="label yellow">Texto desencriptado:</p>
+        </div>
+    </body>
+</html>

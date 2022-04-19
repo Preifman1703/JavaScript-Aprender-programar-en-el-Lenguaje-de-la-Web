@@ -1,0 +1,51 @@
+AULA 1:
+
+-A ajustar la página principal para utilizar los mismos padrones de la página de productos
+Medidas proporcionales con CSS
+
+-Cómo funciona la propiedad float y cómo la podemos usar para que nuestros elementos floten sobre el lado que se indica.
+
+-Como limpiar el float con la propiedad clear del CSS
+
+
+AULA: 4
+
+Selectores avanzados CSS
+
+-Selector > , para acceder a los hijos de determinado elemento. Por ejemplo, para acceder todos los p dentro del main:
+main > p {          }COPIA EL CÓDIGO
+
+-Selector +, para acceder al primer hermano de determinado elemento. Por ejemplo, para 
+acceder el primer p después de una img:
+img + p {           }COPIA EL CÓDIGO
+
+-Selector ~, para acceder a todos los hermanos de determinado elemento. Por ejemplo, para acceder todos los p después de una img:
+img ~ p {           }COPIA EL CÓDIGO
+
+-Selector not, para acceder a los elementos, excepto algunos. Por ejemplo, para acceder a todos los p dentro de main excepto el p que tiene id missao:
+main p:not(#missao) {             }COPIA EL CÓDIGO
+
+-Cómo hacer cuentas con CSS, con la propiedad calc
+
+
+AULA: 5
+
+-Cómo manipular la opacidad de los elementos, con la propiedad CSS opacity.
+
+-Cómo manipular la opacidad de los colores.
+
+-Cómo agregar un sombreado alrededor de los elementos, con la propiedad CSS box-shadow.
+
+-Cómo agregar un sombreado en textos, con la propiedad CSS text-shadow.
+
+
+AULA: 6
+
+-Design responsivo: Cómo ajustar el estilo de nuestra página según el tamaño de pantalla del dispositivo que acceda:
+
+1)Meta etiqueta de Viewport
+
+2)Media Queries
+
+
+

@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO SECRETO</h1>
+
+<input/>
+
+<button>Verificar si acerto con el secreto</button>
+
+<script>
+/// creamos una funcion en la cual, 
+function aleatorio() {
+
+    return Math.round(Math.random()*10);
+}
+
+function sortearNuemeros(cantidad) {
+    var secreto = [];
+    var contador = 1;            
+    
+    //comienza el Loops WHILE
+        while(contador<=cantidad) { //contador empieza en 1 hasta 4.
+        var numeroAleatorio = aleatorio(); // comienza a llamar a la funciuon aleatoria.
+        console.log(numeroAleatorio);
+        var encontrado = false; /// inicializamos esto como falso, osea una bandera
+
+        if(numeroAleatorio != 0){// si numeroAleatorio es diferente de 0, ENTRA, sino pasa a la siguiente iteracion.
+                for(var posicion = 0; posicion < secreto.length; posicion++) { /// iniciamos otro Loops interno, dentro de while, para validar dentro de la varieble "secreto" que no halla numeros repetidos
+                if(numeroAleatorio == secreto[posicion]) {
+                encontrado = true; // trigger o bandera 
+                break;
+                }
+
+            }
+
+            if(encontrado == false) {
+            secreto.push(numeroAleatorio);
+            contador++;
+            }
+
+        }
+       
+
+    }
+    
+    return secreto
+
+}
+
+var secreto = sortearNuemeros(4); //llamo a sorteo, parametro n° 4
+
+console.log(secreto)
+
+var input = document.querySelector("input");
+input.focus();
+
+function verificar() {
+    
+var encontrado = false; /// creacion de bandera, variable booleano.
+for(var posicion = 0; posicion < secreto.length; posicion++) {// ciclo for() iteracion.
+                    //comando length devuelve la longitud de la dimension mas grande de un arreglo en X.                
+
+    if (parseInt(input.value) == secreto[posicion]) {
+
+        alert("Usted acerto");
+        encontrado = true;
+        break;
+        
+        }
+
+
+    }
+
+    if(encontrado == false ) {
+        
+        alert("usted,erro");
+    }
+      
+     input.value = "";
+     input.focus();
+
+}
+
+var button = document.querySelector("button");
+button.onclick = verificar;// accion de boton y verifica al mismo tiempo.
+
+</script>

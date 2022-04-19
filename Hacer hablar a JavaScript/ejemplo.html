@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript habla!</title>
+        <script>
+            function speak (mensaje) {
+                var msg = new SpeechSynthesisUtterance(mensaje);
+                var voices = window.speechSynthesis.getVoices();
+                msg.voice = voices[2];
+                msg.pitch = 0.5;
+                window.speechSynthesis.speak(msg);
+            }
+        </script>
+    </head>
+     <body>
+        
+     </body> 
+     <script> var a = speak('Hola, mundo!'); </script>
+    </html>

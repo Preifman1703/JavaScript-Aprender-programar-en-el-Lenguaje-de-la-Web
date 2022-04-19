@@ -1,0 +1,22 @@
+AULA: 3
+
+-Cómo seleccionar diversos elementos con querySelectorAll().
+
+-Recordamos las iteraciones con ciclo for.
+
+-Manipulación de estilos con la propiedad. style.
+
+-Buenas prácticas al no alterar el estilo directo en JavaScript, sino usar CSS, a través de clases con la propiedad .classList().
+
+
+AULA: 4
+
+-La diferencia entre funciones declaradas y funciones anónimas.
+
+-Realizar captura de eventos con la función addEventListener().
+
+-Crear elementos HTML desde JavaScript con .createElement().
+
+-Acceder al valor de los input a través de la propiedad .input.
+
+-Adicionar elementos dentro de otros elementos con la función appendChild().

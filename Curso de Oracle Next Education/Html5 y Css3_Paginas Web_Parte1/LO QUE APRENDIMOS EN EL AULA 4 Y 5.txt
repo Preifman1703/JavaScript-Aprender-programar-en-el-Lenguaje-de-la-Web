@@ -1,0 +1,19 @@
+aula 4:
+
+Cómo reestructurar nuestro código, removiendo los estilos CSS inline y colocándolos en el archivo CSS externo.
+Cómo crear un identificador para marcar específicamente un elemento: cómo realizar esa referencia a ese identificador en el CSS.
+Cómo adicionar una imagen en nuestra página.
+Cómo ajustar la altura del elemento, a través de la propiedad height.
+Cómo ajustar la anchura del elemento, a través de la propiedad width.
+Cómo ajustar la altura del elemento, a través de la propiedad padding.
+Cómo ajustar la altura del elemento, a través de la propiedad margin.
+Cómo se conforma normalmente un equipo de front-end hoy en día.
+
+aula 5:
+
+Conocimos las listas (ordenadas y no ordenadas), trabajamos con listas no ordenadas.
+Vimos que para cada ítem de la lista necesitamos usar la etiqueta <li>.
+El concepto de las clases en el CSS, estas sirven para marcar ítems, solo que podemos replicar los estilos en varios elementos.
+Cómo referenciar una clase en el CSS.
+Divisores de contenido, utilizando la etiqueta <div>.
+Los comportamientos inline y block.

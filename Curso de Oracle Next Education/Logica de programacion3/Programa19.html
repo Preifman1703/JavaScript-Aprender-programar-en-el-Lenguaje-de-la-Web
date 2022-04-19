@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO SECRETO</h1>
+
+<input/>
+
+<button>Verificar si acerto con el secreto</button>
+
+<script>
+// etiqueta <input/> se usa para crear controles interactivos para formularios basados 
+//en la web con el fin de recibir datos del usuario
+
+
+//var secreto = Math.round(Math.random()*10);
+
+var secreto = [3,5,7,9]; ///array o arreglo
+
+var input = document.querySelector("input");
+input.focus();
+
+function verificar() {
+    
+var encontrado = false; /// creacion de bandera, variable booleano.
+for(var posicion = 0; posicion < secreto.length; posicion++) {// ciclo for() iteracion.
+                    //comando length devuelve la longitud de la dimension mas grande de un arreglo en X.                
+
+    if (parseInt(input.value) == secreto[posicion]) {
+
+        alert("Usted acerto");
+        encontrado = true;
+        break;
+        
+        }
+
+
+    }
+
+    if(encontrado == false ) {
+        
+        alert("usted,erro");
+    }
+      
+     input.value = "";
+     input.focus();
+
+}
+
+var button = document.querySelector("button");
+button.onclick = verificar;// accion de boton y verifica al mismo tiempo.
+
+</script>

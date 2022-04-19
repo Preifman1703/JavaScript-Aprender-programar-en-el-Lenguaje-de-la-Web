@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA</h1>
+<h2>CALCULAR IMC</h2>
+
+<script>
+
+//IMC (INDICE DE MASA CORPORAL)
+//creamos una funcion seguido de una palabra verbal, donde dentro de esta, tiene una ORDEN, que rije de 2 llaves, comienzo y final.
+function saltarLinea() {
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+
+    document.write(frase)
+    saltarLinea();
+}
+
+function calcularImc(peso,altura) {
+
+    imc = peso / (altura * altura)
+    return(imc);
+  
+}
+
+pesoCristian = 71;
+alturaCristian = 1.72;
+//imcCristian = pesoCristian / (alturaCristian * alturaCristian)
+imcCristian = calcularImc(pesoCristian,alturaCristian);
+imprimir("El imc de cristian es: " + Math.round(imcCristian));
+
+saltarLinea();
+
+pesoPablo = 34;
+alturaPablo = 1.32;
+imcPablo = pesoPablo / (alturaPablo * alturaPablo)
+
+imprimir("EL imc de pablo es: " + Math.round(imcPablo));
+
+
+</script>

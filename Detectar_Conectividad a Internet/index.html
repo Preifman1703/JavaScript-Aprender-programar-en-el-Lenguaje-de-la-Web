@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>En línea o no</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen">
+        <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script defer src="chequear_conexion.js"></script>
+    </head>
+    <body>
+            <h3>Conectividad</h3>
+        <div class="card">
+            <div class="card-content">
+                <div class="progress visible" id="barra">
+                    <div class="indeterminate"></div>
+                </div>
+                <div id="tipo-senial" style="text-align:center">
+                    <i class="material-icons visible" id="senial">signal_wifi_4_bar</i>
+                    <i class="material-icons hide" id="no-senial">signal_wifi_off</i>
+                </div>
+                <p id="cardparagraph">A través de esta ventana, probamos la conectividad a Internet con la función <strong>SetInterval()</strong>.</p>
+            </div>
+        </div>
+        <a class="btn-floating btn-large waves-effect waves-light red right shadow" id="boton-agregar"><i class="material-icons">add</i></a>
+    </body>
+</html>

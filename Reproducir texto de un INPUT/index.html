@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reproducir texto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen">
+    </head>
+    <body>
+        <h5>Texto audible</h5>
+        <div class="card">
+            <div class="card-content" style="height:160px">
+                <span id="cardtitle" class="card-title"></span>
+                <p id="cardparagraph">Ingrese el texto a reproducir:</p>
+                <textarea id="texto-audible" rows="20" ></textarea>
+            </div>
+        </div>
+        <a class="btn-floating btn-small waves-light waves-effect blue right shadow visible" id="boton-reproducir" onclick="reproducirTexto();"><i class="material-icons">play_arrow</i></i></a>
+        <a class="btn-floating btn-small waves-light waves-effect blue right shadow hide" id="boton-detener" onclick="#"><i class="material-icons">stop</i></i></a>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="textoaudible.js"></script>
+</html>

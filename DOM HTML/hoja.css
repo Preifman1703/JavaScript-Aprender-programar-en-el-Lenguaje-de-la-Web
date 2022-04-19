@@ -1,0 +1,20 @@
+.formato {
+    background-color: lightyellow;
+    padding: 15px;
+    border-width: 10px;
+    border-color: gold;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    border-width: 1px;
+    border-color: lightgreen;
+
+}
+
+input {
+    background-color: ghostwhite;
+    font-size: 20px;
+}
